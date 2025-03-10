@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n1U7hFmdREg=",
+  "dgSpecHash": "kfhtM1FvqB0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\STUDENTE\\Desktop\\SpriteAnimsTest\\SpriteAnimsTest\\SpriteAnimsTest.csproj",
+  "projectFilePath": "C:\\Users\\STUDENTE\\Desktop\\SMB\\SpriteAnimsTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\STUDENTE\\.nuget\\packages\\libuv\\1.9.1\\libuv.1.9.1.nupkg.sha512",
     "C:\\Users\\STUDENTE\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\1.1.0\\microsoft.codeanalysis.analyzers.1.1.0.nupkg.sha512",

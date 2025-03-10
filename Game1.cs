@@ -88,10 +88,13 @@ namespace SpriteAnimsTest {
             obstacleTexture = Content.Load<Texture2D>("floor");
 
             // Crea e aggiungi ostacoli alla lista
-            for (float x = 0; x <= screenWidth; x += 16) {
+            for (float x = 0; x <= 200; x += 16) {
                 _obstacles.Add(new Obstacle(obstacleTexture, new Vector2(x, 224)));
                 _obstacles.Add(new Obstacle(obstacleTexture, new Vector2(x, 208)));
                 _obstacles.Add(new Obstacle(obstacleTexture, new Vector2(x, 130)));
+            }
+            for (float x = 1600; x <= 1800; x += 16) {
+                _obstacles.Add(new Obstacle(obstacleTexture, new Vector2(x, 192)));
             }
         }
         // Aggiungi altri ostacoli qui
@@ -119,11 +122,6 @@ namespace SpriteAnimsTest {
                 cameraX = _player.Position.X - (visibleWidthInTexture / 2);
                 if (cameraX < 0) cameraX = 0;
                 if (cameraX > maxCameraX) cameraX = maxCameraX;
-
-                foreach (var obstacle in _obstacles) {
-                    if (_player.BoundingBox.Intersects(obstacle.BoundingBox))
-                        Console.WriteLine("ciao"); // Collisione rilevata
-                }
             }
 
             // È buona norma comunque chiamare base.Update

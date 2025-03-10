@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SpriteAnimsTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5eade5187cb16e353503503f164d665f74911038")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9f397658f2b4f8d7750b01f98be920fbbd03429")]
 [assembly: System.Reflection.AssemblyProductAttribute("SpriteAnimsTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SpriteAnimsTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
