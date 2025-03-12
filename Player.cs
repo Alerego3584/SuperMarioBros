@@ -25,7 +25,7 @@ namespace SpriteAnimsTest
         private float runMaxSpeed = 3.25f;
         private int width = 16;
         private int height = 16;
-        private float floorY = 208.3f;
+        private float floorY = 768f; // Set the floor height lower than the screen height
 
         // Stati per salto e skid (già implementati in precedenza)
         private bool isOnGround = false;
@@ -82,7 +82,7 @@ namespace SpriteAnimsTest
 
             if (state == PlayerState.Alive) {
                 // Se si preme R, si innesca la sequenza di morte
-                if (keyboardState.IsKeyDown(Keys.R)) {
+                if (keyboardState.IsKeyDown(Keys.R) || Position.Y > 240) {
                     MediaPlayer.Stop();
                     MediaPlayer.IsRepeating = false;
                     deathSound.Play();
@@ -162,31 +162,66 @@ namespace SpriteAnimsTest
 
                     BoundingBox.Y = (int)Position.Y;
 
+                    // Store previous position for better collision detection
+                    Vector2 previousPosition = new Vector2(Position.X, Position.Y - Velocity.Y);
+                    
                     foreach (var obstacle in SpriteAnimsTestGame._obstacles) {
+                        // Update player's bounding box to match current position
+                        BoundingBox = new Rectangle((int)Position.X, (int)Position.Y, width, height);
+                        
                         if (BoundingBox.Intersects(obstacle.BoundingBox)) {
-                            // Collisione rilevata
-                            Rectangle intersection = Rectangle.Intersect(BoundingBox, obstacle.BoundingBox);
-
-                            if (intersection.Width > intersection.Height) {
-                                // Collisione verticale
-                                if (BoundingBox.Top < obstacle.BoundingBox.Bottom) {
-                                    // Collisione dall'alto
-
+                            // Check if we're moving downward (falling)
+                            if (Velocity.Y > 0) {
+                                // Check if previous position was above the obstacle
+                                if (previousPosition.Y + height <= obstacle.BoundingBox.Y + 2) {
+                                    // Landing on top of obstacle
                                     Position.Y = obstacle.BoundingBox.Top - height;
                                     Velocity.Y = 0;
                                     isOnGround = true;
                                 }
-                                else {
-                                    // Collisione dal basso
+                            }
+                            // Check if we're moving upward (jumping)
+                            else if (Velocity.Y < 0) {
+                                // Only consider bottom collisions if player's top is near obstacle's bottom
+                                // and player is actually colliding with the obstacle's bottom
+                                if (Position.Y <= obstacle.BoundingBox.Bottom &&
+                                    Position.Y >= obstacle.BoundingBox.Bottom - 5 &&
+                                    Position.X + width > obstacle.BoundingBox.Left &&
+                                    Position.X < obstacle.BoundingBox.Right) {
+                                    // Hitting obstacle from below
                                     Position.Y = obstacle.BoundingBox.Bottom;
                                     Velocity.Y = 0;
+                                    isJumping = false;
                                 }
-
                             }
+
+                            // Check horizontal collisions with improved accuracy
+                            // Moving right
+                            if (Velocity.X > 0) {
+                                // Make sure we're actually at the left edge, not just anywhere inside
+                                if (Position.X + width >= obstacle.BoundingBox.Left &&
+                                    Position.X + width <= obstacle.BoundingBox.Left + 5 &&
+                                    !(Position.Y + height <= obstacle.BoundingBox.Top || Position.Y >= obstacle.BoundingBox.Bottom)) {
+                                    Position.X = obstacle.BoundingBox.Left - width;
+                                    Velocity.X = 0;
+                                }
+                            }
+                            // Moving left
+                            else if (Velocity.X < 0) {
+                                // Make sure we're actually at the right edge, not just anywhere inside
+                                if (Position.X <= obstacle.BoundingBox.Right &&
+                                    Position.X >= obstacle.BoundingBox.Right - 5 &&
+                                    !(Position.Y + height <= obstacle.BoundingBox.Top || Position.Y >= obstacle.BoundingBox.Bottom)) {
+                                    Position.X = obstacle.BoundingBox.Right;
+                                    Velocity.X = 0;
+                                }
+                            }
+
+                            // Update bounding box after position changes
+                            BoundingBox.X = (int)Position.X;
+                            BoundingBox.Y = (int)Position.Y;
                         }
                     }
-
-
 
                     // Collisione con il pavimento (solo in modalità Alive)
                     float maxY = floorY - height;

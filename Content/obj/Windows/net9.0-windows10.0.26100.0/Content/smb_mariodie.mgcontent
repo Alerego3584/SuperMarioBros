@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/STUDENTE/Desktop/SpriteAnimsTest/SpriteAnimsTest/Content/smb_mariodie.wav</SourceFile>
+  <SourceFile>C:/Users/STUDENTE/Desktop/SMB/Content/smb_mariodie.wav</SourceFile>
   <SourceTime>2025-02-20T18:51:40+01:00</SourceTime>
-  <DestFile>C:/Users/STUDENTE/Desktop/SpriteAnimsTest/SpriteAnimsTest/Content/bin/Windows/Content/smb_mariodie.xnb</DestFile>
-  <DestTime>2025-03-02T11:42:06.0635701+01:00</DestTime>
+  <DestFile>C:/Users/STUDENTE/Desktop/SMB/Content/bin/Windows/Content/smb_mariodie.xnb</DestFile>
+  <DestTime>2025-03-08T15:45:45.2970324+01:00</DestTime>
   <Importer>WavImporter</Importer>
   <ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime>
   <Processor>SoundEffectProcessor</Processor>

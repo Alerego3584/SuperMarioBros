@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/STUDENTE/Desktop/SpriteAnimsTest/SpriteAnimsTest/Content/groundtheme.mp3</SourceFile>
+  <SourceFile>C:/Users/STUDENTE/Desktop/SMB/Content/groundtheme.mp3</SourceFile>
   <SourceTime>2025-02-18T15:57:52+01:00</SourceTime>
-  <DestFile>C:/Users/STUDENTE/Desktop/SpriteAnimsTest/SpriteAnimsTest/Content/bin/Windows/groundtheme.xnb</DestFile>
-  <DestTime>2025-03-02T12:11:50.7960009+01:00</DestTime>
+  <DestFile>C:/Users/STUDENTE/Desktop/SMB/Content/bin/Windows/groundtheme.xnb</DestFile>
+  <DestTime>2025-03-12T10:43:05.9725065+01:00</DestTime>
   <Importer>Mp3Importer</Importer>
   <ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime>
   <Processor>SongProcessor</Processor>
@@ -15,6 +15,6 @@
   <Dependencies />
   <BuildAsset />
   <BuildOutput>
-    <string>C:/Users/STUDENTE/Desktop/SpriteAnimsTest/SpriteAnimsTest/Content/bin/Windows/groundtheme.wma</string>
+    <string>C:/Users/STUDENTE/Desktop/SMB/Content/bin/Windows/groundtheme.wma</string>
   </BuildOutput>
 </PipelineBuildEvent>

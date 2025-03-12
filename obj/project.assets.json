@@ -7530,11 +7530,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\STUDENTE\\Desktop\\SpriteAnimsTest\\SpriteAnimsTest\\SpriteAnimsTest.csproj",
+      "projectUniqueName": "C:\\Users\\STUDENTE\\Desktop\\SMB\\SpriteAnimsTest.csproj",
       "projectName": "SpriteAnimsTest",
-      "projectPath": "C:\\Users\\STUDENTE\\Desktop\\SpriteAnimsTest\\SpriteAnimsTest\\SpriteAnimsTest.csproj",
+      "projectPath": "C:\\Users\\STUDENTE\\Desktop\\SMB\\SpriteAnimsTest.csproj",
       "packagesPath": "C:\\Users\\STUDENTE\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\STUDENTE\\Desktop\\SpriteAnimsTest\\SpriteAnimsTest\\obj\\",
+      "outputPath": "C:\\Users\\STUDENTE\\Desktop\\SMB\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/STUDENTE/Desktop/SpriteAnimsTest/SpriteAnimsTest/Content/floor.png</SourceFile>
+  <SourceFile>C:/Users/STUDENTE/Desktop/SMB/Content/floor.png</SourceFile>
   <SourceTime>2025-03-02T12:04:47.9988182+01:00</SourceTime>
-  <DestFile>C:/Users/STUDENTE/Desktop/SpriteAnimsTest/SpriteAnimsTest/Content/bin/Windows/Content/floor.xnb</DestFile>
-  <DestTime>2025-03-02T12:12:27.0149414+01:00</DestTime>
+  <DestFile>C:/Users/STUDENTE/Desktop/SMB/Content/bin/Windows/Content/floor.xnb</DestFile>
+  <DestTime>2025-03-08T15:45:42.1239367+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T13:44:56+02:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
