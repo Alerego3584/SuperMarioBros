@@ -96,3 +96,9 @@ C:\Users\STUDENTE\Desktop\SMB\obj\Debug\net9.0-windows10.0.26100.0\refint\Sprite
 C:\Users\STUDENTE\Desktop\SMB\obj\Debug\net9.0-windows10.0.26100.0\SpriteAnimsTest.pdb
 C:\Users\STUDENTE\Desktop\SMB\obj\Debug\net9.0-windows10.0.26100.0\SpriteAnimsTest.genruntimeconfig.cache
 C:\Users\STUDENTE\Desktop\SMB\obj\Debug\net9.0-windows10.0.26100.0\ref\SpriteAnimsTest.dll
+C:\Users\STUDENTE\Desktop\SMB\bin\Debug\net9.0-windows10.0.26100.0\Content\block.xnb
+C:\Users\STUDENTE\Desktop\SMB\bin\Debug\net9.0-windows10.0.26100.0\Content\brick.xnb
+C:\Users\STUDENTE\Desktop\SMB\bin\Debug\net9.0-windows10.0.26100.0\Content\luckyblock.xnb
+C:\Users\STUDENTE\Desktop\SMB\bin\Debug\net9.0-windows10.0.26100.0\Content\tubelarge.xnb
+C:\Users\STUDENTE\Desktop\SMB\bin\Debug\net9.0-windows10.0.26100.0\Content\tubemedium.xnb
+C:\Users\STUDENTE\Desktop\SMB\bin\Debug\net9.0-windows10.0.26100.0\Content\tubesmall.xnb

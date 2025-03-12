@@ -4,15 +4,27 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/STUDENTE/Desktop/SpriteAnimsTest/SpriteAnimsTest/Content/1-1overworld.png</File>
-    <File>C:/Users/STUDENTE/Desktop/SpriteAnimsTest/SpriteAnimsTest/Content/floor.png</File>
-    <File>C:/Users/STUDENTE/Desktop/SpriteAnimsTest/SpriteAnimsTest/Content/groundtheme.mp3</File>
-    <File>C:/Users/STUDENTE/Desktop/SpriteAnimsTest/SpriteAnimsTest/Content/mario.png</File>
-    <File>C:/Users/STUDENTE/Desktop/SpriteAnimsTest/SpriteAnimsTest/Content/pauseFont.spritefont</File>
-    <File>C:/Users/STUDENTE/Desktop/SpriteAnimsTest/SpriteAnimsTest/Content/smb_jump-small.wav</File>
-    <File>C:/Users/STUDENTE/Desktop/SpriteAnimsTest/SpriteAnimsTest/Content/smb_mariodie.wav</File>
+    <File>C:/Users/STUDENTE/Desktop/SMB/Content/1-1overworld.png</File>
+    <File>C:/Users/STUDENTE/Desktop/SMB/Content/block.png</File>
+    <File>C:/Users/STUDENTE/Desktop/SMB/Content/brick.png</File>
+    <File>C:/Users/STUDENTE/Desktop/SMB/Content/floor.png</File>
+    <File>C:/Users/STUDENTE/Desktop/SMB/Content/groundtheme.mp3</File>
+    <File>C:/Users/STUDENTE/Desktop/SMB/Content/luckyblock.png</File>
+    <File>C:/Users/STUDENTE/Desktop/SMB/Content/mario.png</File>
+    <File>C:/Users/STUDENTE/Desktop/SMB/Content/pauseFont.spritefont</File>
+    <File>C:/Users/STUDENTE/Desktop/SMB/Content/smb_jump-small.wav</File>
+    <File>C:/Users/STUDENTE/Desktop/SMB/Content/smb_mariodie.wav</File>
+    <File>C:/Users/STUDENTE/Desktop/SMB/Content/tubelarge.png</File>
+    <File>C:/Users/STUDENTE/Desktop/SMB/Content/tubemedium.png</File>
+    <File>C:/Users/STUDENTE/Desktop/SMB/Content/tubesmall.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

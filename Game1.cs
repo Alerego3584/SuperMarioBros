@@ -39,7 +39,13 @@ namespace SpriteAnimsTest {
 
         // Variabili per gli orstacoli
         public static List<Obstacle> _obstacles = new List<Obstacle> { };
-        private Texture2D obstacleTexture;
+        private Texture2D floorTX;
+        private Texture2D blockTX;
+        private Texture2D brickTX;
+        private Texture2D luckyblockTX;
+        private Texture2D tubesmallTX;
+        private Texture2D tubemediumTX;
+        private Texture2D tubelargeTX;
 
         public SpriteAnimsTestGame() {
             _graphics = new GraphicsDeviceManager(this);
@@ -85,20 +91,180 @@ namespace SpriteAnimsTest {
             // Carica il font personalizzato (aggiungi PauseFont.spritefont al Content Pipeline)
             pauseFont = Content.Load<SpriteFont>("pauseFont");
 
-            obstacleTexture = Content.Load<Texture2D>("floor");
+            floorTX = Content.Load<Texture2D>("floor");
+            blockTX = Content.Load<Texture2D>("block");
+            brickTX = Content.Load<Texture2D>("brick");
+            luckyblockTX = Content.Load<Texture2D>("luckyblock");
+            tubesmallTX = Content.Load<Texture2D>("tubesmall");
+            tubemediumTX = Content.Load<Texture2D>("tubemedium");
+            tubelargeTX = Content.Load<Texture2D>("tubelarge");
 
             // Crea e aggiungi ostacoli alla lista
-            for (float x = 0; x <= 200; x += 16) {
-                _obstacles.Add(new Obstacle(obstacleTexture, new Vector2(x, 224)));
-                _obstacles.Add(new Obstacle(obstacleTexture, new Vector2(x, 208)));
-                _obstacles.Add(new Obstacle(obstacleTexture, new Vector2(x, 130)));
+            for (float x = 0; x <= 1096; x += 16) {
+                _obstacles.Add(new Obstacle(floorTX, new Vector2(x, 224)));
+                _obstacles.Add(new Obstacle(floorTX, new Vector2(x, 208)));
             }
-            for (float x = 1600; x <= 1800; x += 16) {
-                _obstacles.Add(new Obstacle(obstacleTexture, new Vector2(x, 192)));
+            for (float x = 1136; x <= 2432; x += 16) {
+                _obstacles.Add(new Obstacle(floorTX, new Vector2(x, 224)));
+                _obstacles.Add(new Obstacle(floorTX, new Vector2(x, 208)));    
             }
-        }
-        // Aggiungi altri ostacoli qui
+            for (float x = 2480; x <= 3360; x += 16) {
+                _obstacles.Add(new Obstacle(floorTX, new Vector2(x, 224)));
+                _obstacles.Add(new Obstacle(floorTX, new Vector2(x, 208)));    
+            }
 
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(320, 144)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(352, 144)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(384, 144)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(1232, 144)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(1264, 144)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(1280, 80)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(1296, 80)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(1312, 80)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(1328, 80)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(1344, 80)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(1360, 80)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(1376, 80)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(1392, 80)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(1456, 80)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(1472, 80)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(1488, 80)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(1504, 144)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(1600, 144)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(1616, 144)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(1888, 144)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(1936, 80)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(1952, 80)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(1968, 80)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(2048, 80)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(2064, 144)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(2080, 144)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(2096, 80)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(2688, 144)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(2704, 144)));
+            _obstacles.Add(new Obstacle(brickTX, new Vector2(2736, 144)));
+
+
+            _obstacles.Add(new Obstacle(luckyblockTX, new Vector2(256, 144)));
+            _obstacles.Add(new Obstacle(luckyblockTX, new Vector2(336, 144)));
+            _obstacles.Add(new Obstacle(luckyblockTX, new Vector2(352, 80)));
+            _obstacles.Add(new Obstacle(luckyblockTX, new Vector2(368, 144)));
+            _obstacles.Add(new Obstacle(luckyblockTX, new Vector2(1248, 144)));
+            _obstacles.Add(new Obstacle(luckyblockTX, new Vector2(1504, 80)));
+            _obstacles.Add(new Obstacle(luckyblockTX, new Vector2(1696, 144)));
+            _obstacles.Add(new Obstacle(luckyblockTX, new Vector2(1744, 144)));
+            _obstacles.Add(new Obstacle(luckyblockTX, new Vector2(1744, 80)));
+            _obstacles.Add(new Obstacle(luckyblockTX, new Vector2(1792, 144)));
+            _obstacles.Add(new Obstacle(luckyblockTX, new Vector2(2064, 80)));
+            _obstacles.Add(new Obstacle(luckyblockTX, new Vector2(2080, 80)));
+
+
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2144, 192)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2160, 192)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2160, 176)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2176, 192)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2176, 176)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2176, 160)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2192, 192)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2192, 176)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2192, 160)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2192, 144)));
+
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2240, 192)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2240, 176)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2240, 160)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2240, 144)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2256, 192)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2256, 176)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2256, 160)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2272, 192)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2272, 176)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2288, 192)));
+
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2368, 192)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2384, 192)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2384, 176)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2400, 192)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2400, 176)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2400, 160)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2416, 192)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2416, 176)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2416, 160)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2416, 144)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2432, 192)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2432, 176)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2432, 160)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2432, 144)));
+
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2480, 192)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2480, 176)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2480, 160)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2480, 144)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2496, 192)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2496, 176)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2496, 160)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2512, 192)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2512, 176)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2528, 192)));
+
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2896, 192)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2912, 192)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2912, 176)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2928, 192)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2928, 176)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2928, 160)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2944, 192)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2944, 176)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2944, 160)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2944, 144)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2960, 192)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2960, 176)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2960, 160)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2960, 144)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2960, 128)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2976, 192)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2976, 176)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2976, 160)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2976, 144)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2976, 128)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2976, 112)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2992, 192)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2992, 176)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2992, 160)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2992, 144)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2992, 128)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2992, 112)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(2992, 96)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(3008, 192)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(3008, 176)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(3008, 160)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(3008, 144)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(3008, 128)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(3008, 112)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(3008, 96)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(3008, 80)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(3024, 192)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(3024, 176)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(3024, 160)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(3024, 144)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(3024, 128)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(3024, 112)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(3024, 96)));
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(3024, 80)));
+
+            _obstacles.Add(new Obstacle(blockTX, new Vector2(3168, 192)));
+
+
+            _obstacles.Add(new Obstacle(tubesmallTX, new Vector2(448, 176)));
+            _obstacles.Add(new Obstacle(tubesmallTX, new Vector2(2608, 176)));
+            _obstacles.Add(new Obstacle(tubesmallTX, new Vector2(2864, 176)));
+            _obstacles.Add(new Obstacle(tubemediumTX, new Vector2(608, 160)));
+            _obstacles.Add(new Obstacle(tubelargeTX, new Vector2(736, 144)));
+            _obstacles.Add(new Obstacle(tubelargeTX, new Vector2(912, 144)));
+
+
+        // Aggiungi altri ostacoli qui
+        }
 
         protected override void Update(GameTime gameTime) {
             KeyboardState keyboardState = Keyboard.GetState();

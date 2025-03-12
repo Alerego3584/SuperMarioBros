@@ -25,7 +25,7 @@ namespace SpriteAnimsTest
         private float runMaxSpeed = 3.25f;
         private int width = 16;
         private int height = 16;
-        private float floorY = 208.3f;
+        private float floorY = 768f; // Set the floor height lower than the screen height
 
         // Stati per salto e skid (già implementati in precedenza)
         private bool isOnGround = false;
@@ -82,7 +82,7 @@ namespace SpriteAnimsTest
 
             if (state == PlayerState.Alive) {
                 // Se si preme R, si innesca la sequenza di morte
-                if (keyboardState.IsKeyDown(Keys.R)) {
+                if (keyboardState.IsKeyDown(Keys.R) || Position.Y > 240) {
                     MediaPlayer.Stop();
                     MediaPlayer.IsRepeating = false;
                     deathSound.Play();

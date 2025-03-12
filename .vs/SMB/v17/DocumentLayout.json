@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\STUDENTE\\Desktop\\SMB\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{98D08840-1305-4B99-2850-8FC9281496CA}|SpriteAnimsTest.csproj|c:\\users\\studente\\desktop\\smb\\content\\content.mgcb||{3EC6CBD1-65BD-4B26-A758-3B207D048872}",
+      "RelativeMoniker": "D:0:0:{98D08840-1305-4B99-2850-8FC9281496CA}|SpriteAnimsTest.csproj|solutionrelative:content\\content.mgcb||{3EC6CBD1-65BD-4B26-A758-3B207D048872}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{98D08840-1305-4B99-2850-8FC9281496CA}|SpriteAnimsTest.csproj|c:\\users\\studente\\desktop\\smb\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98D08840-1305-4B99-2850-8FC9281496CA}|SpriteAnimsTest.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,12 +23,24 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Content.mgcb",
+              "DocumentMoniker": "C:\\Users\\STUDENTE\\Desktop\\SMB\\Content\\Content.mgcb",
+              "RelativeDocumentMoniker": "Content\\Content.mgcb",
+              "ToolTip": "C:\\Users\\STUDENTE\\Desktop\\SMB\\Content\\Content.mgcb",
+              "RelativeToolTip": "Content\\Content.mgcb",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-12T10:32:58.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\STUDENTE\\Desktop\\SMB\\Player.cs",
               "RelativeDocumentMoniker": "Player.cs",
               "ToolTip": "C:\\Users\\STUDENTE\\Desktop\\SMB\\Player.cs",
               "RelativeToolTip": "Player.cs",
-              "ViewState": "AgIAAJUAAAAAAAAAAAAwwKQAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAwwKkAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-08T16:37:37.152Z",
               "EditorCaption": ""
