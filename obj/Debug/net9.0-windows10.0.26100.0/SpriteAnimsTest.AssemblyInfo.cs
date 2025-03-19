@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SpriteAnimsTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dbd86cef0198d077eba67aab8b9ce2da56019037")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35b8e4ad0b1fcf201c9235b91aaa43e4cbd55c4b")]
 [assembly: System.Reflection.AssemblyProductAttribute("SpriteAnimsTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SpriteAnimsTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
