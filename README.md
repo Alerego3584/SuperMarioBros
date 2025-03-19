@@ -1,22 +1,22 @@
-![intro](readme/image.png)
+![intro](readme/image.jpg)
 ## FASI DEL GIOCO
 
 ### INIZIO
 Appena iniziati, Mario apparirà subito all’inizio del livello.
-![image1](readme/image1.png)
+![image1](readme/image1.jpg)
 Per muoversi nel livello, premere le frecce direzionali **Sinistra/Destra**
 
 ---
 
 ### SALTO
 Per comodità, al posto della barra spaziatrice, abbiamo deciso di utilizzare il tasto **Z** per effettuare il salto. Così facendo, Mario eseguirà un piccolo salto, ma se si tiene premuto eseguirà un salto ancora più in alto.
-![image2](readme/image2.png)
+![image2](readme/image2.jpg)
 
 ---
 
 ### SCATTO (Sprint)
 Per far correre più veloce l’idraulico, basta premere il tasto **Shift Sinistro/Destro** e Mario subito inizierà a scattare verso la direzione desiderata!
-![image3](readme/image3.png)
+![image3](readme/image3.jpg)
 **Nota bene:** date le fisiche, Mario potrebbe risultare un po’ scivoloso, quindi attenzione quando correte troppo veloci!
 
 ---
@@ -29,14 +29,14 @@ Se la mamma vi chiama a tavola perché è pronto non preoccuparti! Avrai la poss
 
 ## COLLISIONI
 Ricorda bene che, come nell’originale, Mario può saltare sopra tubi e blocchi, ma questo può anche bloccarlo, perciò ricorda di sfruttare il salto (e sfruttalo bene, dato che i Goomba non sono l’unico ostacolo di Mario!)
-![image5](readme/image5.png)
+![image5](readme/image5.jpg)
 
 ---
 
 ## BUCHE
 Fai attenzione! Se cadi in una delle buche, Mario morirà!
-![image6](readme/image6.png)
-![image7](readme/image7.png)
+![image6](readme/image6.jpg)
+![image7](readme/image7.jpg)
 
 ---
 
