@@ -159,3 +159,4 @@ C:\Users\STUDENTE\Desktop\SuperMarioBros-292b637e8090e229adba4278ed7173f0214b832
 C:\Users\STUDENTE\Desktop\SuperMarioBros-292b637e8090e229adba4278ed7173f0214b8328\obj\Debug\net9.0-windows10.0.26100.0\ref\SpriteAnimsTest.dll
 C:\Users\STUDENTE\Desktop\SuperMarioBros-292b637e8090e229adba4278ed7173f0214b8328\bin\Debug\net9.0-windows10.0.26100.0\Content\levelcomplete.wma
 C:\Users\STUDENTE\Desktop\SuperMarioBros-292b637e8090e229adba4278ed7173f0214b8328\bin\Debug\net9.0-windows10.0.26100.0\Content\levelcomplete.xnb
+C:\Users\STUDENTE\Desktop\SuperMarioBros-292b637e8090e229adba4278ed7173f0214b8328\obj\Debug\net9.0-windows10.0.26100.0\SpriteAnimsTest.sourcelink.json

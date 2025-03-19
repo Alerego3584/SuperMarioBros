@@ -291,13 +291,6 @@ namespace SpriteAnimsTest
             MediaPlayer.Play(backgroundMusic);
         }
 
-        public override void Draw(SpriteBatch spriteBatch, float cameraX, float scale) {
-            float screenX = (Position.X - cameraX) * scale;
-            float screenY = Position.Y * scale;
-            SpriteEffects effects = (Velocity.X < 0) ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
-            currentAnimation.Draw(spriteBatch, new Vector2(screenX, screenY), scale, effects);
-        }
-
         public override void Die()
         {
             // Se il Player è ancora vivo, cambia stato a Dying
