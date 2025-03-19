@@ -1,4 +1,4 @@
-![intro](readme/image.jpg)
+![intro](readme/image.png)
 ## FASI DEL GIOCO
 
 ### INIZIO
